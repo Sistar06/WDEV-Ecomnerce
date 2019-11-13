@@ -1,8 +1,26 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
+import { AppComponent } from './app.component';
+import { LancamentosComponent } from './lancamentos/lancamentos.component';
 
-const routes: Routes = [];
+
+const routes: Routes = [
+  {
+    path: '',
+    component: AppComponent
+  },
+
+  {
+    path: 'index',
+    component: AppComponent
+  },
+
+  {
+    path: 'lancamento',
+    component: AppComponent
+  },
+];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
